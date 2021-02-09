@@ -1,3 +1,6 @@
+import ocean.fish.Fish;
+import ocean.plants.Seaweed;
+
 class Robot{
     public void speak(String text) {
         System.out.println(text);
@@ -14,6 +17,8 @@ class Robot{
 public class App {
 
     public static void main(String[] args) {
+        Fish fish = new Fish();
+        Seaweed seaweed = new Seaweed();
         Robot sam = new Robot();
         sam.speak("Hi I'm SAM.");
         sam.jump(7);
