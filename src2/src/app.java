@@ -1,5 +1,9 @@
+import world.Plant;
+
 public class app {
     public static void main(String[] args) {
+
+        Plant plant = new Plant();
 
         Machine mach1 = new Machine();
         mach1.start();
@@ -15,6 +19,7 @@ public class app {
 
         outputInfo(mach1);
         outputInfo(person1);
+        
     }
 
     private static void outputInfo(Info info){
