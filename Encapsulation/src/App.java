@@ -60,6 +60,7 @@ public class App {
 
         String animal = strings.get(1);
 
+
         // There can be more than one type argument
 
         HashMap<Integer, String > map = new HashMap<Integer, String>();
