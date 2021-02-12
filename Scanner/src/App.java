@@ -14,7 +14,7 @@ public class App {
         System.out.println("Read value: " + value);
 
         in.nextLine();
-        int count = 2;
+        int count = 1;
         while (in.hasNextLine()) {
             String line = in.nextLine();
 
