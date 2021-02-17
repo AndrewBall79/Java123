@@ -3,7 +3,23 @@ import java.text.ParseException;
 
 public class App {
     public static void main(String[] args) {
-        Test test = new Test();
+//        Runtime exception
+//        int value = 7;
+//        value = value/0;
+
+//        Null Pointer exception
+//        String text = null;
+//        text.length();
+
+
+//        ArrayIndexOutOfBoundsException
+      try{
+        String[] texts = {"one", "two", "three"};
+        System.out.println(texts[6]);
+      } catch (RuntimeException e){
+          System.out.println(e.toString());
+      }
+//        Test test = new Test();
 
 //        try {
 //            test.run();
@@ -19,17 +35,17 @@ public class App {
 //            e.printStackTrace();
 //        }
 
-        try {
-            test.run();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        try {
-            test.input();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            test.run();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        try {
+//            test.input();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
     }
 }
