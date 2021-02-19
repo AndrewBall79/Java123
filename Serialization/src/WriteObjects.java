@@ -14,8 +14,8 @@ public class WriteObjects {
         ArrayList<Person> peopleList = new ArrayList<Person>(Arrays.asList(people));
 
 
-        try(FileOutputStream fs = new FileOutputStream("Serialization/people.txt")){
-            ObjectOutputStream os = new ObjectOutputStream(fs);
+        try(FileOutputStream fs = new FileOutputStream("Serialization/people.txt");
+            ObjectOutputStream os = new ObjectOutputStream(fs)){
 
             os.writeObject(people);
 
@@ -27,7 +27,6 @@ public class WriteObjects {
                 os.writeObject(person);
             }
 
-            os.close();
         }catch (FileNotFoundException e){
             e.printStackTrace();
         }catch (IOException e){
