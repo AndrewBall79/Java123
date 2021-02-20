@@ -1,28 +1,43 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class App {
     public static void main(String[] args) {
-        HashMap<Integer, String> map = new HashMap<Integer, String>();
+        HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
 
-        map.put(5, "five");
-        map.put(8, "eight");
-        map.put(3, "three");
-        map.put(7, "seven");
-        map.put(2, "two");
+        LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String >();
 
-        map.put(2, "hello");
+        TreeMap<Integer, String> treeMap = new TreeMap<Integer, String>();
 
-        String text = map.get(2);
+        //observe the orders in which the maps are kept.
+        testMap(hashMap);
+        testMap(linkedHashMap);
+        testMap(treeMap);
 
-        System.out.println(text);
+    }
+    public static void testMap(Map<Integer, String> map){
+        map.put(5, "cow");
+        map.put(8, "donkey");
+        map.put(3, "spider");
+        map.put(7, "snake");
+        map.put(2, "bat");
+        map.put(1, "cat");
+        map.put(4, "monkey");
+        map.put(9, "bird");
+        map.put(10, "dinosaur");
+        map.put(11, "tiger");
+        map.put(12, "hello");
+        map.put(6, "goat");
 
-        for (Map.Entry<Integer, String> entry: map.entrySet()) {
-            int key = entry.getKey();
-            String value = entry.getValue();
-
-            System.out.println(key + ": " + value);
+        for(Integer key: map.keySet()){
+            String value = map.get(key);
+            System.out.println(key + ": " + value );
         }
 
+//        for (Map.Entry<Integer, String> entry: map.entrySet()) {
+//            int key = entry.getKey();
+//            String value = entry.getValue();
+//
+//            System.out.println("Other for loop: " + key + ": " + value);
+//        }
     }
 }
