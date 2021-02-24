@@ -1,8 +1,49 @@
 import java.util.*;
 
+class Person{
+    private int id;
+    private String name;
+
+    public Person(int id, String name){
+        this.id = id;
+        this.name = name;
+    }
+
+    public String toString(){
+        return id + ": " + name;
+    }
+}
+
 public class App {
     public static void main(String[] args) {
 
+        Person p1 = new Person(0, "Bob");
+        Person p2 = new Person(1, "Sue");
+        Person p3 = new Person(2, "Mike");
+        Person p4 = new Person(1, "Sue");
+
+        Map<Person, Integer> mapPersonMap = new LinkedHashMap<Person, Integer>();
+
+        Set<Person> set = new HashSet<Person>();
+
+        System.out.println(set);
+
+        Map<String, Integer> mapSetString = new HashMap<String, Integer>();
+        mapSetString.put("one", 1);
+        mapSetString.put("two", 2);
+        mapSetString.put("three", 3);
+        mapSetString.put("one", 1);
+
+        for (String key: mapSetString.keySet()){
+            System.out.println(key + ": " + mapSetString.get(key));
+        }
+
+        Set<String> set = new LinkedHashSet<String>();
+        set.add("dog");
+        set.add("cat");
+        set.add("mouse");
+        set.add("cat");
+        System.out.println(set);
 
         //Hast set does not retain order.
         Set<String> set1 = new HashSet<String>();
