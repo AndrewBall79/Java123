@@ -38,13 +38,6 @@ public class App {
             System.out.println(key + ": " + mapSetString.get(key));
         }
 
-        Set<String> set = new LinkedHashSet<String>();
-        set.add("dog");
-        set.add("cat");
-        set.add("mouse");
-        set.add("cat");
-        System.out.println(set);
-
         //Hast set does not retain order.
         Set<String> set1 = new HashSet<String>();
 
