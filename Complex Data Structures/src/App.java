@@ -52,3 +52,15 @@ public class App {
         }
     }
 }
+
+// 10 Tips to Become a Better Programmer
+// 10. Learn to touch type
+// 9. Name variables and subroutines descriptively
+// 8. Type rather than read
+// 7. Write software that interests you
+// 6. Read stack traces from the top line down
+// 5. Aim to write the smallest working program possible
+// 4. Google
+// 3. Build programs one step at a time
+// 2. Ensure braces pair up
+// 1. Format code correctly
